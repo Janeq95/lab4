@@ -18,5 +18,6 @@ while [[ $# -gt 0 ]]; do
   shift
 done
 
+
 # Jeśli nie podano żadnej opcji, domyślnie wyświetlana jest dzisiejsza data
 echo "Dzisiejsza data: $current_date"
