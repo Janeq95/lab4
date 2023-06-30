@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $1 == "--logs" ]]; then
+if [[ $1 == "--logs" || $1 == "-l" ]]; then
   for ((i=1; i<=100; i++))
   do
     filename="log${i}.txt"
@@ -8,5 +8,5 @@ if [[ $1 == "--logs" ]]; then
     echo -e "Nazwa pliku: $filename\nNazwa skryptu: $0\nData utworzenia: $current_date" > "$filename"
   done
 else
-  echo "Nieprawid�owe u�ycie skryptu. Poprawne u�ycie: skrypt.sh --logs"
+  echo "Nieprawidłowe użycie skryptu. Poprawne użycie: skrypt.sh --logs/-l"
 fi

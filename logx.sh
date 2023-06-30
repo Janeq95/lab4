@@ -13,6 +13,13 @@ if [[ $1 == "--logs" ]]; then
     current_date=$(date +"%Y-%m-%d")
     echo -e "Nazwa pliku: $filename\nNazwa skryptu: $0\nData utworzenia: $current_date" > "$filename"
   done
+elif [[ $1 == "--log" ]]; then
+  if [[ -n $2 ]]; then
+    # Dodaj tutaj obsługę flagi --log
+    echo "Wybrano opcję --log z flagami: $2"
+  else
+    echo "Nieprawidłowe użycie skryptu. Poprawne użycie: skrypt.sh --log [flagi]"
+  fi
 else
-  echo "Nieprawid�owe u�ycie skryptu. Poprawne u�ycie: skrypt.sh --logs [liczba_plik�w]"
+  echo "Nieprawidłowe użycie skryptu. Poprawne użycie: skrypt.sh --logs [liczba_plików]"
 fi
