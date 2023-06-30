@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [[ $1 == "--help" ]]; then
-  echo "Dostêpne opcje skryptu:"
-  echo "skrypt.sh --date       : Wyœwietla dzisiejsz¹ datê."
-  echo "skrypt.sh --logs       : Tworzy automatycznie 100 plików logx.txt z nazw¹ pliku, nazw¹ skryptu i dat¹."
-  echo "skrypt.sh --logs [liczba_plików] : Tworzy automatycznie okreœlon¹ liczbê plików logx.txt z nazw¹ pliku, nazw¹ skryptu i dat¹."
+if [[ $1 == "--help" || $1 == "-h" ]]; then
+  echo "DostÄ™pne opcje skryptu:"
+  echo "--date       : WyÅ›wietla dzisiejszÄ… datÄ™."
+  echo "--logs       : Tworzy automatycznie 100 plikÃ³w logx.txt z nazwÄ… pliku, nazwÄ… skryptu i datÄ…."
+  echo "--logs [liczba_plikÃ³w] : Tworzy automatycznie okreÅ›lonÄ… liczbÄ™ plikÃ³w logx.txt z nazwÄ… pliku, nazwÄ… skryptu i datÄ…."
 fi
